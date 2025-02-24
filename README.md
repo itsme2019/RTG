@@ -113,7 +113,7 @@ sudo apt install meshlab
 
 🎉 After the conversion, you can import the .dae file into Gazebo🎉
 
-# Limitations
+## 👎 Limitations
 - Purely monocular depth-based terrains can be inaccurate, might need some manual scaling 
 - Work in progress:
 ![alt text](image.png)
