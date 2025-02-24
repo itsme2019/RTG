@@ -1,4 +1,4 @@
-# RoSE Terrain Generator (RTG)
+# 🚀  RoSE Terrain Generator (RTG) 🌔 
 
 This script uses of the **Depth Anything V2** package to produce 3D meshes from depth maps from 2D images as input. The resulting meshes can be used in various simulation platforms, such as **Isaac Sim** and **Gazebo**.
 
