@@ -1,6 +1,23 @@
 # RoSE Terrain Generator (RTG)
 
-This script uses of the **Depth Anything V2** package to generate 3D meshes from depth maps, using images as input. The resulting meshes can be used in various simulation platforms, such as **Isaac Sim** and **Gazebo**.
+This script uses of the **Depth Anything V2** package to produce 3D meshes from depth maps from 2D images as input. The resulting meshes can be used in various simulation platforms, such as **Isaac Sim** and **Gazebo**.
+
+<details>
+  <summary><b>Usage in Isaac Sim & Gazebo</b></summary>
+
+  <p><strong>Isaac Sim with Robot:</strong></p>
+  <img src="terrain_in_sim_samples/isaac_w_robot.png" alt="Isaac Sim with Robot" width="400" />
+  
+  <p><strong>Isaac Sim:</strong></p>
+  <img src="terrain_in_sim_samples/isaac.png" alt="Isaac Sim" width="400" />
+
+  <p><strong>Gazebo:</strong></p>
+  <img src="terrain_in_sim_samples/gazebo.png" alt="Gazebo" width="400" />
+</details>
+
+## :brain: Motivation
+While there are plenty of DEM simulation options for lunar (and, in some cases, Martian) environments, as space robotics enthusiasts, we're also interested in exploring the terrains of other planets and exoplanets. This monocular depth-based estimation provides an easy way to generate terrain meshes for advanced simulations, using just 2D images to fill in the gaps where DEM resources are lacking for unexplored terrains.
+
 
 ## ⚡️ Installation & Setup
 
@@ -11,6 +28,9 @@ To begin, you need to clone the **Depth-Anything V2** repository from GitHub:
 git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 cd Depth-Anything-V2
 ```
+Store the model weights you want to use (I used the base model weights) into a folder named **"checkpoints"** in the root folder.
+[Further Instructions: Depth-Anything-V2 GitHub](https://github.com/DepthAnything/Depth-Anything-V2/tree/main)
+
 ### 2. Install dependencies
 Run the requirements.txt file to install dependencies from the root folder
 
@@ -92,3 +112,8 @@ sudo apt install meshlab
 - Make sure to check TexCoord.
 
 🎉 After the conversion, you can import the .dae file into Gazebo🎉
+
+# Limitations
+- Purely monocular depth-based terrains can be inaccurate, might need some manual scaling 
+- Work in progress:
+![alt text](image.png)
