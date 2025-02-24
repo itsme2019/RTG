@@ -83,7 +83,7 @@ The generated mesh will be saved in the specified outdir in multiple formats lik
 ## 🛠️ Usage in Simulation Environments
 
 ### 1. Isaac Sim
-The generated .obj mesh can be directly imported into Isaac Sim for use in simulation. Set **Z-axis up** while importing the mesh file. You mght need to adjust the orientation and scale of the mesh file as needed.
+The generated .obj mesh can be directly imported into Isaac Sim for use in simulation. Set **Z-axis up** while importing the mesh file. You might need to adjust the orientation and scale of the mesh file as needed.
 
 ### 2. Gazebo
 If you are using Gazebo, you may need to convert the mesh from **.ply** to **.dae (Collada)** format.
