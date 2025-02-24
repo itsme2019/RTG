@@ -51,7 +51,7 @@ Copy the rtg.py file from RTG into the root folder of the **Depth-Anything-V2** 
 ### 4. Set Image Path and Max Depth
 The script allows you to configure the input image path and the maximum depth value (more the depth, bigger the mesh).
 
-Open the script rtg.py and update the following configuration variables in the CONFIG section (I am using basic):
+Open the script rtg.py and update the following configuration variables in the CONFIG section (I am using vitb):
 ```
 CONFIG = {
     # select the model
