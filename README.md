@@ -3,7 +3,7 @@
 This script uses of the **Depth Anything V2** package to produce 3D meshes from depth maps from 2D images as input. The resulting meshes can be used in various simulation platforms, such as **Isaac Sim** and **Gazebo**.
 
 <details>
-  <summary><b>Usage in Isaac Sim & Gazebo</b></summary>
+  <summary><b>Usage in Isaac Sim & Gazebo (Example Images)</b></summary>
   <br>
 
   <p><strong>Isaac Sim with Robot:</strong></p>
