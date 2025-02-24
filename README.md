@@ -4,6 +4,7 @@ This script uses of the **Depth Anything V2** package to produce 3D meshes from 
 
 <details>
   <summary><b>Usage in Isaac Sim & Gazebo</b></summary>
+  <br>
 
   <p><strong>Isaac Sim with Robot:</strong></p>
   <img src="terrain_in_sim_samples/isaac_w_robot.png" alt="Isaac Sim with Robot" width="400" />
@@ -120,4 +121,10 @@ sudo apt install meshlab
 ## 👎 Limitations
 - Purely monocular depth-based terrains can be inaccurate, might need some manual scaling 
 - Work in progress:
+
 ![alt text](image.png)
+
+## :raised_hands: Acknowledgements
+
+- Thanks to Lihe Yang and the team for coming up with Depth-Anything-V2
+- Thanks to the user, Iker Lluvia for documenting meshlab coversion process [here](https://github.com/ethz-asl/voxblox_ground_truth/issues/13)
