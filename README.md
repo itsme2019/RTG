@@ -53,11 +53,15 @@ The script allows you to configure the input image path and the maximum depth va
 Open the script rtg.py and update the following configuration variables in the CONFIG section (I am using basic):
 ```
 CONFIG = {
+    # select the model
     'encoder': 'vitb',  
+    # load pretrained weights
     'load_from': 'Depth-Anything-V2/checkpoints/depth_anything_v2_vitb.pth',
     'max_depth': 200,  # Adjust max depth to scale the mesh size (larger depth = bigger mesh)
     'img_path': 'path_to_your_image.png',  # Set the path to the image you want to process
+    #output directory where you want to store mesh data
     'outdir': './vis_pointcloud',
+    # these may require some trial and error
     'focal_length_x': 470.4,
     'focal_length_y': 470.4,
     'save_formats': ['ply', 'pcd', 'xyz'],  # Multiple formats for compatibility
